@@ -21,7 +21,6 @@ timar = "08:10-10:15&10:35-12:40&13:10-15:15&15:30-17:35"
 print(timarN)
 """
 
-
 def time():
     cursor.execute("SELECT timar FROM snid")
     timar = cursor.fetchall()
@@ -48,19 +47,13 @@ for x in timarN:
     asd = asd.replace(":", "")
     timarNN.append(asd)
 print(timarNN)
-strengur = "%s\n        "
 fjTima = 4
 stuff = """"""
-for x in range(fjTima):
-    stuff += strengur
-print(stuff)
 
-stuff = stuff % (str(timarNN[0] + " VARCHAR(10),"),
-                 str(timarNN[1] + " VARCHAR(10),"),
-                 str(timarNN[2] + " VARCHAR(10),"),
-                 str(timarNN[3] + " VARCHAR(10)"))
+for x in range(fjTima):
+    stuff += str(timarNN[0] + " integer,\n        ")
 
 a = stofur % stuff
 
 print(a)
-# cursor.execute(a) 
+# cursor.execute(a)
