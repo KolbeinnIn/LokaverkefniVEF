@@ -1,100 +1,4 @@
 Stofa;Heiti;Vikudagar;Frá;Til
-H 00;Hátíðarsalur;1;08:10;08:50
-H 00;Hátíðarsalur;1;08:50;09:30
-H 00;Hátíðarsalur;1;09:30;10:10
-H 00;Hátíðarsalur;1;10:30;11:10
-H 00;Hátíðarsalur;1;11:10;11:50
-H 00;Hátíðarsalur;1;11:50;12:30
-H 00;Hátíðarsalur;1;12:30;13:10
-H 00;Hátíðarsalur;1;13:10;13:50
-H 00;Hátíðarsalur;1;13:50;14:30
-H 00;Hátíðarsalur;1;14:30;15:10
-H 00;Hátíðarsalur;1;15:30;16:10
-H 00;Hátíðarsalur;1;16:10;16:50
-H 00;Hátíðarsalur;1;16:50;17:30
-H 00;Hátíðarsalur;1;17:30;18:10
-H 00;Hátíðarsalur;1;18:10;18:50
-H 00;Hátíðarsalur;1;18:50;19:30
-H 00;Hátíðarsalur;2;08:10;08:50
-H 00;Hátíðarsalur;2;08:50;09:30
-H 00;Hátíðarsalur;2;09:30;10:10
-H 00;Hátíðarsalur;2;10:30;11:10
-H 00;Hátíðarsalur;2;11:10;11:50
-H 00;Hátíðarsalur;2;11:50;12:30
-H 00;Hátíðarsalur;2;12:30;13:10
-H 00;Hátíðarsalur;2;13:10;13:50
-H 00;Hátíðarsalur;2;13:50;14:30
-H 00;Hátíðarsalur;2;14:30;15:10
-H 00;Hátíðarsalur;2;15:30;16:10
-H 00;Hátíðarsalur;2;16:10;16:50
-H 00;Hátíðarsalur;2;16:50;17:30
-H 00;Hátíðarsalur;2;17:30;18:10
-H 00;Hátíðarsalur;2;18:10;18:50
-H 00;Hátíðarsalur;2;18:50;19:30
-H 00;Hátíðarsalur;3;08:10;08:50
-H 00;Hátíðarsalur;3;08:50;09:30
-H 00;Hátíðarsalur;3;09:30;10:10
-H 00;Hátíðarsalur;3;10:30;11:10
-H 00;Hátíðarsalur;3;11:10;11:50
-H 00;Hátíðarsalur;3;11:50;12:30
-H 00;Hátíðarsalur;3;12:30;13:10
-H 00;Hátíðarsalur;3;13:10;13:50
-H 00;Hátíðarsalur;3;13:50;14:30
-H 00;Hátíðarsalur;3;14:30;15:10
-H 00;Hátíðarsalur;3;15:30;16:10
-H 00;Hátíðarsalur;3;16:10;16:50
-H 00;Hátíðarsalur;3;16:50;17:30
-H 00;Hátíðarsalur;3;17:30;18:10
-H 00;Hátíðarsalur;3;18:10;18:50
-H 00;Hátíðarsalur;3;18:50;19:30
-H 00;Hátíðarsalur;4;08:10;08:50
-H 00;Hátíðarsalur;4;08:50;09:30
-H 00;Hátíðarsalur;4;09:30;10:10
-H 00;Hátíðarsalur;4;10:30;11:10
-H 00;Hátíðarsalur;4;11:10;11:50
-H 00;Hátíðarsalur;4;11:50;12:30
-H 00;Hátíðarsalur;4;12:30;13:10
-H 00;Hátíðarsalur;4;13:10;13:50
-H 00;Hátíðarsalur;4;13:50;14:30
-H 00;Hátíðarsalur;4;14:30;15:10
-H 00;Hátíðarsalur;4;15:30;16:10
-H 00;Hátíðarsalur;4;16:10;16:50
-H 00;Hátíðarsalur;4;16:50;17:30
-H 00;Hátíðarsalur;4;17:30;18:10
-H 00;Hátíðarsalur;4;18:10;18:50
-H 00;Hátíðarsalur;4;18:50;19:30
-H 00;Hátíðarsalur;5;08:10;08:50
-H 00;Hátíðarsalur;5;08:50;09:30
-H 00;Hátíðarsalur;5;09:30;10:10
-H 00;Hátíðarsalur;5;10:30;11:10
-H 00;Hátíðarsalur;5;11:10;11:50
-H 00;Hátíðarsalur;5;11:50;12:30
-H 00;Hátíðarsalur;5;12:30;13:10
-H 00;Hátíðarsalur;5;13:10;13:50
-H 00;Hátíðarsalur;5;13:50;14:30
-H 00;Hátíðarsalur;5;14:30;15:10
-H 00;Hátíðarsalur;5;15:30;16:10
-H 00;Hátíðarsalur;5;16:10;16:50
-H 00;Hátíðarsalur;5;16:50;17:30
-H 00;Hátíðarsalur;5;17:30;18:10
-H 00;Hátíðarsalur;5;18:10;18:50
-H 00;Hátíðarsalur;5;18:50;19:30
-H 00;Hátíðarsalur;6;08:10;08:50
-H 00;Hátíðarsalur;6;08:50;09:30
-H 00;Hátíðarsalur;6;09:30;10:10
-H 00;Hátíðarsalur;6;10:30;11:10
-H 00;Hátíðarsalur;6;11:10;11:50
-H 00;Hátíðarsalur;6;11:50;12:30
-H 00;Hátíðarsalur;6;12:30;13:10
-H 00;Hátíðarsalur;6;13:10;13:50
-H 00;Hátíðarsalur;6;13:50;14:30
-H 00;Hátíðarsalur;6;14:30;15:10
-H 00;Hátíðarsalur;6;15:30;16:10
-H 00;Hátíðarsalur;6;16:10;16:50
-H 00;Hátíðarsalur;6;16:50;17:30
-H 00;Hátíðarsalur;6;17:30;18:10
-H 00;Hátíðarsalur;6;18:10;18:50
-H 00;Hátíðarsalur;6;18:50;19:30
 H 001;H Smíðar 1;1;08:10;08:50
 H 001;H Smíðar 1;1;08:50;09:30
 H 001;H Smíðar 1;1;09:30;10:10
@@ -16738,7 +16642,7 @@ S 620;S Tölvustofa almenn;1;10:30;11:10
 S 620;S Tölvustofa almenn;1;11:10;11:50
 S 620;S Tölvustofa almenn;1;11:50;12:30
 S 620;S Tölvustofa almenn;1;12:30;13:10
-S 620;S Tölvustofa almenn;1;15:30;16:10
+S 620;S Tölvustofa almenn;1;15:30;16:10 
 S 620;S Tölvustofa almenn;1;16:10;16:50
 S 620;S Tölvustofa almenn;1;16:50;17:30
 S 620;S Tölvustofa almenn;1;17:30;18:10

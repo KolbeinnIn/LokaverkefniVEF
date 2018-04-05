@@ -21,7 +21,7 @@ VALUES
 
 INSERT INTO stofa(stofuNr,dagur,timar)
 VALUES
-	(620, "MAN", ),
+	(620, "MAN", 0,1,1,1),
 	(620, "TRI", 1,0,1,0),
 	(620, "MID", 1,1,0,0),
 	(620, "FIM", 1,1,1,0),

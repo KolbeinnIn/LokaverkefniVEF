@@ -21,6 +21,7 @@ timar = "08:10-10:15&10:35-12:40&13:10-15:15&15:30-17:35"
 print(timarN)
 """
 
+
 def time():
     cursor.execute("SELECT timar FROM snid")
     timar = cursor.fetchall()
@@ -57,3 +58,4 @@ a = stofur % stuff
 
 print(a)
 # cursor.execute(a)
+
