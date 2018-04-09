@@ -1,0 +1,20 @@
+bygging:
+	id
+	name
+	address
+
+stofur:
+	id
+	bygging_id
+	name
+
+dagar:
+	id
+	name
+
+timar:
+	id
+	stofur_id
+	timi_fra
+	timi_til
+	dagar_id
