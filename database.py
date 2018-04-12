@@ -24,7 +24,7 @@ fim = []
 fos = []
 lau = []
 teljari = 1
-for x in range(0, len(listi2), 5):
+for x in range(0, len(listi2)-5, 5):
     if listi2[x] not in lyklar:
         lyklar.append([teljari, listi2[x]])
     dicta = {str(teljari) + ";" + listi2[x]: [listi2[x + 1], listi2[x + 2], listi2[x + 3], listi2[x + 4]]}

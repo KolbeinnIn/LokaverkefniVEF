@@ -15,12 +15,11 @@ def get_time():
     return now
 
 
-a = cursor.execute("SELECT * FROM timar")
+a = cursor.execute("SELECT * FROM timar limit(1000);")
 a1 = cursor.fetchall()
-b = cursor.execute("SELECT * FROM timar WHERE timi_fra = '08:10' AND dagar_ID = 6;")
+b = cursor.execute("SELECT * FROM timar WHERE timi_fra = '18:50' AND dagar_ID = 6;")
 b1 = cursor.fetchall()
 print(a1)
-print(b1)
 
 dagar = ["mánudagur",
          "þriðjudagur",
