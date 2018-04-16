@@ -8,6 +8,47 @@ listi2 = []
 with sqlite3.connect("stofur.db") as db:
     cursor = db.cursor()
 
+flag = input("J/N")
+if flag.lower() == "j":
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS stofur(
+            ID integer primary key,
+            nafn VARCHAR(30) NOT NULL
+        );
+    """)
+
+
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS dagar(
+            ID integer primary key AUTOINCREMENT,
+            nafn VARCHAR(13) NOT NULL
+        );
+    """)
+
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS timar(
+            ID integer primary key AUTOINCREMENT,
+            timi_fra CHAR(5) NOT NULL,
+            timi_til CHAR(5) NOT NULL,
+            stofur_ID integer NOT NULL, 
+            dagar_ID integer NOT NULL,
+            FOREIGN KEY (stofur_ID) REFERENCES stofur(ID),
+            FOREIGN KEY (dagar_ID) REFERENCES dagar(ID)
+        );
+    """)
+
+    cursor.execute("""
+        INSERT INTO dagar(nafn)
+        VALUES
+            ("Mánudagur"),
+            ("Þriðjudagur"),
+            ("Miðvikudagur"),
+            ("Fimmtudagur"),
+            ("Föstudagur"),
+            ("Laugardagur"),
+            ("Sunnudagur")
+    """)
+
 with open("lausarstofur.csv", "r", encoding="ISO-8859-1") as skra:
     asd = skra.read()
     listi = asd.split("\n")
@@ -41,14 +82,6 @@ for x in range(0, len(listi2)-5, 5):
         fos.append(dicta)
     elif listi2[x + 2] == "6":
         lau.append(dicta)
-
-man2 = []
-tri2 = []
-mid2 = []
-fim2 = []
-fos2 = []
-lau2 = []
-temp = []
 
 def lyklar2(y, listi_d):
     b = listi_d[y].keys()
@@ -88,35 +121,3 @@ insert(fim)
 insert(fos)
 insert(lau)
 db.commit()
-"""
-#Killed hugmynd að hafa nafn á stofu sem key og safna öllum tímunum í lista sem value en það er smá erfitt so no...
-for x in range(len(man)):
-    def lyklar(y):
-        if y-2 >= len(man):
-            b = man[y].keys()
-        else:
-            b = man[y-2].keys()
-        b = [l for l in b][0]
-        return b
-
-
-    if lyklar(x) == lyklar(x + 2):
-        for i, value in man[x].items():
-            if i not in temp:
-                if lyklar(x) == lyklar(x + 1):
-                    temp.append(i)
-            if value[0] not in temp and value[1] not in temp:
-                temp.append(value[0])
-                temp.append(value[1])
-
-            if value[2] not in temp and value[3] not in temp:
-                temp.append(value[2])
-                temp.append(value[3])
-    else:
-        man2.append(temp)
-        temp = []
-    print(lyklar(x+1), x)
-
-del(man2[0])
-print(man2)
-"""
