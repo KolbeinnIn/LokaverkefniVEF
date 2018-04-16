@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31e1f468-cd6a-464a-a91f-1d135cec532a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/base.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/database.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/database2.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lausarstofur.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/model.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/stofur.db" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MVC/controller.py" afterPath="$PROJECT_DIR$/MVC/controller.py" />
+      <change beforePath="$PROJECT_DIR$/MVC/database.py" afterPath="$PROJECT_DIR$/MVC/database.py" />
+      <change beforePath="$PROJECT_DIR$/MVC/lausarstofur.csv" afterPath="$PROJECT_DIR$/MVC/lausarstofur.csv" />
+      <change beforePath="$PROJECT_DIR$/MVC/model.py" afterPath="$PROJECT_DIR$/MVC/model.py" />
+      <change beforePath="$PROJECT_DIR$/MVC/stofur.db" afterPath="$PROJECT_DIR$/MVC/stofur.db" />
+      <change beforePath="$PROJECT_DIR$/MVC/templates/leikarar.tpl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MVC/templates/main.tpl" afterPath="$PROJECT_DIR$/MVC/templates/main.tpl" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,8 +22,8 @@
       <file leaf-file-name="model.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MVC/model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="543">
-              <caret line="55" column="64" lean-forward="false" selection-start-line="55" selection-start-column="64" selection-end-line="55" selection-end-column="64" />
+            <state relative-caret-position="401">
+              <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
               <folding>
                 <element signature="e#51#65#0" expanded="true" />
               </folding>
@@ -31,33 +31,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="applications.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/applications.py">
+      <file leaf-file-name="controller.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MVC/controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="database.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MVC/database.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+            <state relative-caret-position="340">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
-                <element signature="e#259#1277#0" expanded="false" />
+                <element signature="e#54#73#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database2.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MVC/database2.py">
+      <file leaf-file-name="database.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MVC/database.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="543">
+              <caret line="141" column="14" lean-forward="true" selection-start-line="141" selection-start-column="14" selection-end-line="141" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -77,12 +67,15 @@
       <find>key</find>
       <find>dagar</find>
       <find>now</find>
+      <find>leikarar=leikarar</find>
       <find>dicta</find>
     </findStrings>
     <replaceStrings>
       <replace>dagar</replace>
       <replace>dicta</replace>
       <replace>get_time()</replace>
+      <replace>timar=timar</replace>
+      <replace>listi</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -99,8 +92,9 @@
         <option value="$PROJECT_DIR$/database2.py" />
         <option value="$PROJECT_DIR$/database.py" />
         <option value="$PROJECT_DIR$/model.py" />
-        <option value="$PROJECT_DIR$/MVC/model.py" />
         <option value="$PROJECT_DIR$/MVC/database2.py" />
+        <option value="$PROJECT_DIR$/MVC/controller.py" />
+        <option value="$PROJECT_DIR$/MVC/model.py" />
         <option value="$PROJECT_DIR$/MVC/database.py" />
       </list>
     </option>
@@ -262,8 +256,8 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.database (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Python.model" />
-        <item index="2" class="java.lang.String" itemvalue="Python.model (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.model (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.model" />
         <item index="3" class="java.lang.String" itemvalue="Python.database" />
         <item index="4" class="java.lang.String" itemvalue="Python.dummy" />
       </list>
@@ -498,13 +492,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MVC/model.py">
+    <entry file="file://$PROJECT_DIR$/MVC/database2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="55" column="64" lean-forward="false" selection-start-line="55" selection-start-column="64" selection-end-line="55" selection-end-column="64" />
-          <folding>
-            <element signature="e#51#65#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVC/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -516,9 +516,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../VEFII/Verkefni2/MVC/controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVC/controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="e#54#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVC/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <folding>
+            <element signature="e#51#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MVC/stofur.db">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1989">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -526,18 +554,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MVC/database.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-          <folding>
-            <element signature="e#259#1277#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MVC/database2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state relative-caret-position="543">
+          <caret line="141" column="14" lean-forward="true" selection-start-line="141" selection-start-column="14" selection-end-line="141" selection-end-column="14" />
           <folding />
         </state>
       </provider>

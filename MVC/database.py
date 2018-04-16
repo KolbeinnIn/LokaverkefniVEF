@@ -4,50 +4,64 @@
 
 import sqlite3
 
+
+
+def db1():
+    cursor.execute("""
+            CREATE TABLE IF NOT EXISTS bygging(
+            ID integer primary key,
+            nafn VARCHAR(30) NOT NULL,
+            address VARCHAR(100) NOT NULL
+            );
+        """)
+    cursor.execute("""
+            CREATE TABLE IF NOT EXISTS stofur(
+                ID integer primary key,
+                nafn VARCHAR(30) NOT NULL
+                bygging_ID int,
+                FOREIGN KEY (bygging_ID) REFERENCES bygging(ID)
+            );
+        """)
+
+    cursor.execute("""
+            CREATE TABLE IF NOT EXISTS dagar(
+                ID integer primary key AUTOINCREMENT,
+                nafn VARCHAR(13) NOT NULL
+            );
+        """)
+
+    cursor.execute("""
+            CREATE TABLE IF NOT EXISTS timar(
+                ID integer primary key AUTOINCREMENT,
+                timi_fra CHAR(5) NOT NULL,
+                timi_til CHAR(5) NOT NULL,
+                stofur_ID integer NOT NULL, 
+                dagar_ID integer NOT NULL,
+                FOREIGN KEY (stofur_ID) REFERENCES stofur(ID),
+                FOREIGN KEY (dagar_ID) REFERENCES dagar(ID)
+            );
+        """)
+
+    cursor.execute("""
+            INSERT INTO dagar(nafn)
+            VALUES
+                ("Mánudagur"),
+                ("Þriðjudagur"),
+                ("Miðvikudagur"),
+                ("Fimmtudagur"),
+                ("Föstudagur"),
+                ("Laugardagur"),
+                ("Sunnudagur")
+        """)
+
 listi2 = []
 with sqlite3.connect("stofur.db") as db:
     cursor = db.cursor()
 
+
 flag = input("J/N")
 if flag.lower() == "j":
-    cursor.execute("""
-        CREATE TABLE IF NOT EXISTS stofur(
-            ID integer primary key,
-            nafn VARCHAR(30) NOT NULL
-        );
-    """)
-
-
-    cursor.execute("""
-        CREATE TABLE IF NOT EXISTS dagar(
-            ID integer primary key AUTOINCREMENT,
-            nafn VARCHAR(13) NOT NULL
-        );
-    """)
-
-    cursor.execute("""
-        CREATE TABLE IF NOT EXISTS timar(
-            ID integer primary key AUTOINCREMENT,
-            timi_fra CHAR(5) NOT NULL,
-            timi_til CHAR(5) NOT NULL,
-            stofur_ID integer NOT NULL, 
-            dagar_ID integer NOT NULL,
-            FOREIGN KEY (stofur_ID) REFERENCES stofur(ID),
-            FOREIGN KEY (dagar_ID) REFERENCES dagar(ID)
-        );
-    """)
-
-    cursor.execute("""
-        INSERT INTO dagar(nafn)
-        VALUES
-            ("Mánudagur"),
-            ("Þriðjudagur"),
-            ("Miðvikudagur"),
-            ("Fimmtudagur"),
-            ("Föstudagur"),
-            ("Laugardagur"),
-            ("Sunnudagur")
-    """)
+    db1()
 
 with open("lausarstofur.csv", "r", encoding="ISO-8859-1") as skra:
     asd = skra.read()
@@ -83,16 +97,27 @@ for x in range(0, len(listi2)-5, 5):
     elif listi2[x + 2] == "6":
         lau.append(dicta)
 
+
 def lyklar2(y, listi_d):
     b = listi_d[y].keys()
     b = [l for l in b][0]
     return b
 
 
+def bygging():
+    cursor.execute("""
+        INSERT INTO bygging(ID, nafn, address)
+        VALUES
+            (1, "Tækniskólinn Skólavörðuholti", "Skólavörðuholt 101 Reykjavík"),
+            (2, "Tækniskólinn Hafnarfirði", "Flatahraun 12-14 220 Hafnarfirði"),
+            (3, "Tækniskólinn - Sjómannaskólinn", "Háteigsvegur 35-39 105 Reykjavík"),
+    """)
+
+
 def stofur(key_listi):
     for x in key_listi:
         innsetning = ("""
-            INSERT INTO stofur(ID, nafn)
+            INSERT INTO stofur(ID, nafn, bygging_ID)
             VALUES(%d, "%s")
         """) % (int(x[0]), str(x[1]))
         cursor.execute(innsetning)
@@ -113,7 +138,8 @@ def insert(dag_listi):
         cursor.execute(innsetning)
 
 
-# stofur(lyklar)
+bygging()
+stofur(lyklar)
 insert(man)
 insert(tri)
 insert(mid)
