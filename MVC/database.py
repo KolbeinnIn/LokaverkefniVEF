@@ -3,22 +3,21 @@
 
 
 import sqlite3
-
-
+from re import *
 
 def db1():
     cursor.execute("""
             CREATE TABLE IF NOT EXISTS bygging(
-            ID integer primary key,
-            nafn VARCHAR(30) NOT NULL,
-            address VARCHAR(100) NOT NULL
+                ID integer primary key,
+                nafn VARCHAR(30) NOT NULL,
+                address VARCHAR(100) NOT NULL
             );
         """)
     cursor.execute("""
             CREATE TABLE IF NOT EXISTS stofur(
                 ID integer primary key,
-                nafn VARCHAR(30) NOT NULL
-                bygging_ID int,
+                nafn VARCHAR(30) NOT NULL,
+                bygging_ID integer NOT NULL,
                 FOREIGN KEY (bygging_ID) REFERENCES bygging(ID)
             );
         """)
@@ -51,7 +50,7 @@ def db1():
                 ("Fimmtudagur"),
                 ("Föstudagur"),
                 ("Laugardagur"),
-                ("Sunnudagur")
+                ("Sunnudagur");
         """)
 
 listi2 = []
@@ -110,17 +109,27 @@ def bygging():
         VALUES
             (1, "Tækniskólinn Skólavörðuholti", "Skólavörðuholt 101 Reykjavík"),
             (2, "Tækniskólinn Hafnarfirði", "Flatahraun 12-14 220 Hafnarfirði"),
-            (3, "Tækniskólinn - Sjómannaskólinn", "Háteigsvegur 35-39 105 Reykjavík"),
+            (3, "Tækniskólinn - Sjómannaskólinn", "Háteigsvegur 35-39 105 Reykjavík")
     """)
 
 
 def stofur(key_listi):
     for x in key_listi:
-        innsetning = ("""
-            INSERT INTO stofur(ID, nafn, bygging_ID)
-            VALUES(%d, "%s")
-        """) % (int(x[0]), str(x[1]))
-        cursor.execute(innsetning)
+        if search("S(?=\s[0-9]+)", x[1]):
+            bID = 1
+        elif search("H(?=\s[0-9]+)", x[1]):
+            bID = 3
+        elif search("TH-(?=[0-9]+)", x[1]):
+            bID = 2
+        else:
+            bID = 0
+        if bID != 0:
+            innsetning = ("""
+                INSERT INTO stofur(ID, nafn, bygging_ID)
+                VALUES(%d, "%s", %d)
+            """) % (int(x[0]), str(x[1]), bID)
+            cursor.execute(innsetning)
+        bid = 0
 
 
 def insert(dag_listi):
@@ -138,7 +147,7 @@ def insert(dag_listi):
         cursor.execute(innsetning)
 
 
-bygging()
+#bygging()
 stofur(lyklar)
 insert(man)
 insert(tri)

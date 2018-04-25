@@ -67,9 +67,11 @@ nyr = []
 for x in a1:
     fra, til = x[2].split(":"), x[3].split(":")
     timi2 = [x[0], x[1], [int(fra[0]), int(fra[1]), int(til[0]), int(til[1])], x[-1]]
-    if get_time()[3] <= timi2[2][0] and get_time()[3] <= timi2[2][1]:
+    if timi2[2][2] > get_time()[3] == timi2[2][0]:
         print(timi2)
         nyr.append(timi2)
+print(get_time()[3], get_time()[4])
+
 
 
 
