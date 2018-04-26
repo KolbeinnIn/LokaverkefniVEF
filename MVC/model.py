@@ -13,14 +13,6 @@ def get_time():
     return now
 
 
-b = cursor.execute("SELECT * FROM timar limit(10)")
-listi = cursor.fetchall()
-#print(listi)
-
-#                         b
-# (auto id, timi_fra, timi_til, stofur_ID, dagur_ID
-# (1,       '08:10',  '08:50',     1,          1)
-
 dagar = ["mánudagur",
          "þriðjudagur",
          "miðvikudagur",
@@ -30,51 +22,70 @@ dagar = ["mánudagur",
          "sunnudagur"]
 
 
-class Timar:
-    def __init__(self, listinn):
-        self.listi = listinn
-
-    def query(self, timi):
-        listi2 = []
-        a = cursor.execute("""SELECT stofur.nafn, timar.timi_fra, timar.timi_til
-                           FROM stofur, timar
-                           WHERE stofur.ID = timar.stofur_ID
-                           LIMIT(10);""")
-        a1 = cursor.fetchall()
-        for x in a1:
-            fra = x[1].split(":")
-
-        return listi2
-
-    def timi(self):
-        return self.listi
-
-
-timar = Timar(listi).timi()
-# q = Timar(listi).query("11:25")
-
-
-#
-timi = "11:25"
-
-a = cursor.execute("""SELECT stofur.nafn, stofur.ID, timar.timi_fra, timar.timi_til, timar.dagar_ID
-                       FROM stofur, timar
-                       WHERE stofur.ID = timar.stofur_ID
-                       limit(100);""")
+a = cursor.execute("""SELECT stofur.nafn, stofur.ID, timar.timi_fra, timar.timi_til, timar.dagar_ID, stofur.bygging_ID
+                        FROM stofur, timar
+                        WHERE stofur.ID = timar.stofur_ID;""")
 
 a1 = cursor.fetchall()
-nyr = []
-for x in a1:
-    fra, til = x[2].split(":"), x[3].split(":")
-    timi2 = [x[0], x[1], [int(fra[0]), int(fra[1]), int(til[0]), int(til[1])], x[-1]]
-    if timi2[2][2] > get_time()[3] == timi2[2][0]:
-        print(timi2)
-        nyr.append(timi2)
-print(get_time()[3], get_time()[4])
+b = cursor.execute("""SELECT *
+                      FROM bygging;""")
+
+byggingar = cursor.fetchall()
 
 
 
+class Laust:
+    def __init__(self, query):
+        self.query = query
+        self.nyr = []
+        
+    def current_time(self):
+        klukk = get_time()[3]
+        minu = get_time()[4]
+        current_dagur = get_time()[6]
+        for x in self.query:
+            fra, til = x[2].split(":"), x[3].split(":")
+            timi = [x[0], x[1], [int(fra[0]), int(fra[1]), int(til[0]), int(til[1])], x[4], x[5]]
+            if timi[2][2] >= klukk >= timi[2][0] and x[4] == current_dagur:
+                if minu >= timi[2][1]:
+                    self.nyr.append(timi)
+        return self.nyr
+    
+    def selected_time(self, klst, minu, day):
+        for x in self.query:
+            fra, til = x[2].split(":"), x[3].split(":")
+            timi = [x[0], x[1], [int(fra[0]), int(fra[1]), int(til[0]), int(til[1])], x[4], x[5]]
+            if timi[2][2] >= klst >= timi[2][0]:
+                if minu <= timi[2][3] and klst == timi[2][2]:
+                    self.nyr.append(timi)
+                    print(timi, "asdjkhasdjasdjhasdjk")
+
+            if timi[2][2] >= klst == timi[2][0] and minu >= timi[2][1]:
+                self.nyr.append(timi)
+                print(timi)
+        return self.nyr
 
 
+current = Laust(a1).current_time()
+selected = Laust(a1).selected_time(10, 11, 2)
+print(selected)
 
+# print(get_time()[3], get_time()[4])
+
+
+def activate(klasi, b_listi):
+    bygging = "Óvitað"
+    for x in klasi:
+        if x[-1] == 1:
+            bygging = b_listi[0][1]
+        elif x[-1] == 2:
+            bygging = b_listi[1][1]
+        elif x[-1] == 3:
+            bygging = b_listi[2][1]
+
+        print("Stofa %s er laus frá kl %d:%d - %d:%d\n"
+              "Bygging: %s\n" % (x[0], x[2][0], x[2][1], x[2][2], x[2][3], bygging))
+
+
+#activate(selected, byggingar)
 
