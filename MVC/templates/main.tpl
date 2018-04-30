@@ -9,7 +9,8 @@
         <title>Lokaverkefni - Kolbeinn</title>
     </head>
     <body>
-        {% extends file %}
+        
+        <!--{% extends file %}-->
     </body>
 </html>
 
