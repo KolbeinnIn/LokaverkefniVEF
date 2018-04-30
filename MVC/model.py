@@ -4,7 +4,7 @@
 import sqlite3
 import time
 
-with sqlite3.connect("stofur.db") as db:
+with sqlite3.connect("../stofur.db") as db:
     cursor = db.cursor()
 
 
@@ -58,17 +58,12 @@ class Laust:
             if timi[2][2] >= klst >= timi[2][0]:
                 if minu <= timi[2][3] and klst == timi[2][2]:
                     self.nyr.append(timi)
-                    print(timi, "asdjkhasdjasdjhasdjk")
 
             if timi[2][2] >= klst == timi[2][0] and minu >= timi[2][1]:
                 self.nyr.append(timi)
-                print(timi)
         return self.nyr
 
 
-current = Laust(a1).current_time()
-selected = Laust(a1).selected_time(10, 11, 2)
-print(selected)
 
 # print(get_time()[3], get_time()[4])
 
@@ -88,4 +83,5 @@ def activate(klasi, b_listi):
 
 
 #activate(selected, byggingar)
+#activate(current, byggingar)
 

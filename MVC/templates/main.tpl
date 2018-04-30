@@ -3,14 +3,14 @@
     <head>
         <META charset="utf-8"/>
         <link rel="stylesheet" href="../static/semantic/semantic.min.css"/>
+        <link rel="stylesheet" href="../static/css/main_styles.css"/>
         <script src="../static/semantic/jquery-3.3.1.min.js"></script>
         <script src="../static/semantic/semantic.min.js"></script>
         
         <title>Lokaverkefni - Kolbeinn</title>
     </head>
     <body>
-        
-        <!--{% extends file %}-->
+        {% extends file %}
     </body>
 </html>
 

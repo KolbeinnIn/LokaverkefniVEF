@@ -5,35 +5,23 @@
 from MVC import app
 from MVC import model
 from flask import render_template, redirect, url_for, flash
-from MVC.forms import LoginForm
 
 
-timar = model.timar
+laust = model.Laust(model.a1)
 
+byggingar = model.byggingar
+activate = model.activate
+
+
+current_timi = laust.selected_time(10, 10, 2)
 path = "main.tpl"
+
+# current_timi = laust.current_time()
+# selected_timi = laust.selected_time(10, 10, 2)
 
 
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/index', methods=['GET', 'POST'])
-def templates():
+def index():
     file = "lausarstofur.tpl"
-    return render_template(path, file=file, timar=timar)
-
-
-
-"""
-@app.route('/', methods=['GET', 'POST'])
-@app.route("/login", methods=['GET', 'POST'])
-def login():
-    file = "login.tpl"
-    form = LoginForm()
-    global nafn
-    nafn = form.username.data
-    print(nafn)
-    if form.validate_on_submit():
-        flash('Login requested for user {}, remember_me={}'.format(
-            form.username.data, form.remember_me.data))
-        return redirect(url_for('templates'))
-
-    return render_template(path, file=file, form=form)
-"""
+    return render_template(path, file=file) # , timi=current_timi)

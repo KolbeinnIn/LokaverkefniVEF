@@ -5,6 +5,7 @@
 import sqlite3
 from re import *
 
+
 def db1():
     cursor.execute("""
             CREATE TABLE IF NOT EXISTS bygging(
@@ -54,7 +55,7 @@ def db1():
         """)
 
 listi2 = []
-with sqlite3.connect("stofur.db") as db:
+with sqlite3.connect("../stofur.db") as db:
     cursor = db.cursor()
 
 
@@ -147,7 +148,7 @@ def insert(dag_listi):
         cursor.execute(innsetning)
 
 
-#bygging()
+bygging()
 stofur(lyklar)
 insert(man)
 insert(tri)
