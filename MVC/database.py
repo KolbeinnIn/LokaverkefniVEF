@@ -123,7 +123,7 @@ def stofur(key_listi):
                 print(x[1])
             else:
                 bID = 1
-                print(x[1],"asd")
+                print(x[1], "asd")
         elif search("H(?=\s[0-9]+)", x[1]):
             bID = 3
         elif search("TH-(?=[0-9]+)", x[1]):

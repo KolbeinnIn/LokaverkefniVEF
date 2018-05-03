@@ -37,8 +37,8 @@ class Laust:
     def __init__(self, query):
         self.query = query
         self.nyr = []
-        
-    def current_time(self):
+
+    """def current_time(self):
         klukk = get_time()[3]
         minu = get_time()[4]
         current_dagur = get_time()[6]
@@ -56,23 +56,29 @@ class Laust:
                     if timi[2][3] >= minu >= timi[2][1]:
                         self.nyr.append(timi)
             print("ASD")
-        return self.nyr
+        return self.nyr"""
     
-    def selected_time(self, klst, minu, day):
-        self.nyr = []
+    def selected_time(self, klst, minu, day, bygging):
         for x in self.query:
+            flag = False
             fra, til = x[2].split(":"), x[3].split(":")
             timi = [x[0], x[1], [int(fra[0]), int(fra[1]), int(til[0]), int(til[1])], x[4], x[5]]
+
             if timi[2][2] >= klst >= timi[2][0] and timi[3] == day:
                 if timi[2][0] == klst and timi[2][2] != klst:
                     if minu >= timi[2][1]:
-                        self.nyr.append(timi)
+                        flag = True
                 elif timi[2][2] == klst and timi[2][0] != klst:
                     if minu <= timi[2][3]:
-                        self.nyr.append(timi)
+                        flag = True
                 elif timi[2][2] == klst == timi[2][0]:
                     if timi[2][3] >= minu >= timi[2][1]:
-                        self.nyr.append(timi)
+                        flag = True
+            if flag and bygging == 0:
+                self.nyr.append(timi)
+            elif flag and bygging != 0:
+                if bygging == timi[-1]:
+                    self.nyr.append(timi)
         return self.nyr
 
 

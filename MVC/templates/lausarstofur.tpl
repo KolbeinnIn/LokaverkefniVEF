@@ -7,8 +7,23 @@
             <h3 class="ui header">Sér valinn tími</h3>
             <form action="val">
                 <div class="ui blue inverted segment">
-                    <input style="position: relative; left:16px;" id="select_time" type="time" name="timi" value="12:00" min="08:10" max="19:30" required>
+                    <input style="position: relative; left:16px; margin:5px;" id="select_time" type="time" name="timi" value="12:00" min="08:10" max="19:30" required>
                     <span style="position: relative; left:16px;" class="validity"></span>
+                    <select  style="margin:5px;" name="dagur" required>
+                        <option value=1>mánudagur</option>
+                        <option value=2>þriðjudagur</option>
+                        <option value=2>miðvikudagur</option>
+                        <option value=3>fimmtudagur</option>
+                        <option value=4>föstudagur</option>
+                        <option value=5>laugardagur</option>
+                    </select>
+                    <select  style="margin:5px;" name="bygging" value="0">
+                        <option value=0>Bygging</option>
+                        <option value=1>Skólavörðuholt - aðal</option>
+                        <option value=2>Tækniskólinn Hafnarfirði</option>
+                        <option value=3>Sjómannaskólinn</option>
+                        <option value=4>Vörðuskóli</option>
+                    </select>
                 </div>
                 <div>
                     <input type="submit" value="Staðfesta">
