@@ -7,7 +7,7 @@
             <h3 class="ui header">Sér valinn tími</h3>
             <form action="val">
                 <div class="ui blue inverted segment">
-                    <input style="position: relative; left:16px;" id="select_time" type="time" name="timi" value="00:00" min="08:10" max="19:30" required>
+                    <input style="position: relative; left:16px;" id="select_time" type="time" name="timi" value="12:00" min="08:10" max="19:30" required>
                     <span style="position: relative; left:16px;" class="validity"></span>
                 </div>
                 <div>
@@ -43,8 +43,10 @@
                 <p>Það er pása</p>
             </div>
         {% endif %}
-
     </div>
+    {% if flag == True: %}
+    <a href="/"><button>Til baka</button></a>
+    {% endif %}
 </div>
         
 <script>

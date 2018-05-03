@@ -61,6 +61,7 @@ class Laust:
         return self.nyr
     
     def selected_time(self, klst, minu, day):
+        self.nyr = []
         for x in self.query:
             fra, til = x[2].split(":"), x[3].split(":")
             timi = [x[0], x[1], [int(fra[0]), int(fra[1]), int(til[0]), int(til[1])], x[4], x[5]]
