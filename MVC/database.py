@@ -55,7 +55,7 @@ def db1():
         """)
 
 listi2 = []
-with sqlite3.connect("../stofur.db") as db:
+with sqlite3.connect("stofur.db") as db:
     cursor = db.cursor()
 
 

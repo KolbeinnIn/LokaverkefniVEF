@@ -4,7 +4,7 @@
 import sqlite3
 import time
 
-with sqlite3.connect("../stofur.db") as db:
+with sqlite3.connect("stofur.db") as db:
     cursor = db.cursor()
 
 
@@ -33,7 +33,6 @@ b = cursor.execute("""SELECT *
 byggingar = cursor.fetchall()
 
 
-
 class Laust:
     def __init__(self, query):
         self.query = query
@@ -46,42 +45,41 @@ class Laust:
         for x in self.query:
             fra, til = x[2].split(":"), x[3].split(":")
             timi = [x[0], x[1], [int(fra[0]), int(fra[1]), int(til[0]), int(til[1])], x[4], x[5]]
-            if timi[2][2] >= klukk >= timi[2][0] and x[4] == current_dagur:
-                if minu >= timi[2][1]:
-                    self.nyr.append(timi)
+            if timi[2][2] >= klukk >= timi[2][0] and timi[3] == current_dagur:
+                if timi[2][0] == klukk and timi[2][2] != klukk:
+                    if minu >= timi[2][1]:
+                        self.nyr.append(timi)
+                        #print(timi, "111111111111111111")
+                elif timi[2][2] == klukk and timi[2][0] != klukk:
+                    if minu <= timi[2][3]:
+                        self.nyr.append(timi)
+                        #print(timi, "222222222222222222")
+                elif timi[2][2] == klukk == timi[2][0]:
+                    if timi[2][3] >= minu >= timi[2][1]:
+                        self.nyr.append(timi)
+                        #print(timi, "333333333333333333")
         return self.nyr
     
     def selected_time(self, klst, minu, day):
         for x in self.query:
             fra, til = x[2].split(":"), x[3].split(":")
             timi = [x[0], x[1], [int(fra[0]), int(fra[1]), int(til[0]), int(til[1])], x[4], x[5]]
-            if timi[2][2] >= klst >= timi[2][0]:
-                if minu <= timi[2][3] and klst == timi[2][2]:
-                    self.nyr.append(timi)
+            if timi[2][2] >= klst >= timi[2][0] and timi[3] == day:
+                if timi[2][0] == klst and timi[2][2] != klst:
+                    if minu >= timi[2][1]:
+                        self.nyr.append(timi)
+                        #print(timi, "111111111111111111")
+                elif timi[2][2] == klst and timi[2][0] != klst:
+                    if minu <= timi[2][3]:
+                        self.nyr.append(timi)
+                        #print(timi, "222222222222222222")
+                elif timi[2][2] == klst == timi[2][0]:
+                    if timi[2][3] >= minu >= timi[2][1]:
+                        self.nyr.append(timi)
+                        #print(timi, "333333333333333333")
 
-            if timi[2][2] >= klst == timi[2][0] and minu >= timi[2][1]:
-                self.nyr.append(timi)
         return self.nyr
 
 
-
+#asd = Laust(a1).selected_time(9, 15, 6)
 # print(get_time()[3], get_time()[4])
-
-
-def activate(klasi, b_listi):
-    bygging = "Óvitað"
-    for x in klasi:
-        if x[-1] == 1:
-            bygging = b_listi[0][1]
-        elif x[-1] == 2:
-            bygging = b_listi[1][1]
-        elif x[-1] == 3:
-            bygging = b_listi[2][1]
-
-        print("Stofa %s er laus frá kl %d:%d - %d:%d\n"
-              "Bygging: %s\n" % (x[0], x[2][0], x[2][1], x[2][2], x[2][3], bygging))
-
-
-#activate(selected, byggingar)
-#activate(current, byggingar)
-
