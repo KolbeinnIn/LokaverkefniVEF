@@ -23,14 +23,17 @@
                 <h3>{{x[0]}}</h3>
                 <h4>{{x[2][0]}}:{{x[2][1]}}-{{x[2][2]}}:{{x[2][3]}}</h4>
                 {% if x[-1] == 1: %}
-                    <h4>{{byggingar[0][1]}}</h4>
-                    <h4>{{byggingar[0][2]}}</h4>
+                    <h4 style="margin:0;">{{byggingar[0][1]}}</h4>
+                    <h4 style="margin:0;">{{byggingar[0][2]}}</h4>
                 {% elif x[-1] == 2: %}
-                    <h4>{{byggingar[1][1]}}</h4>
-                    <h4>{{byggingar[1][2]}}</h4>
+                    <h4 style="margin:0;">{{byggingar[1][1]}}</h4>
+                    <h4 style="margin:0;">{{byggingar[1][2]}}</h4>
                 {% elif x[-1] == 3: %}
-                    <h4>{{byggingar[2][1]}}</h4>
-                    <h4>{{byggingar[2][2]}}</h4>
+                    <h4 style="margin:0;">{{byggingar[2][1]}}</h4>
+                    <h4 style="margin:0;">{{byggingar[2][2]}}</h4>
+                {% elif x[-1] == 4: %}
+                    <h4 style="margin:0;">{{byggingar[3][1]}}</h4>
+                    <h4 style="margin:0;">{{byggingar[3][2]}}</h4>
                 {% else: %}
                     <h4>Bygging óvituð</h4>
                 {% endif %}

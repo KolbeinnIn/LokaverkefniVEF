@@ -4,9 +4,7 @@
 
 from MVC import app
 from MVC import model
-from flask import render_template, redirect, url_for, flash, request
-
-
+from flask import render_template, redirect, url_for, request
 
 
 byggingar = model.byggingar
@@ -19,7 +17,9 @@ path = "main.tpl"
 def index():
     laust = model.Laust(model.a1)
     file = "lausarstofur.tpl"
-    current_timi = laust.current_time()
+    ctimi = model.get_time()
+    klst, minu, dagur = ctimi[3], ctimi[4], ctimi[6]
+    current_timi = laust.selected_time(klst, minu, dagur)
     return render_template(path, file=file, timi=current_timi, len=len(current_timi), byggingar=byggingar, flag=False)
 
 

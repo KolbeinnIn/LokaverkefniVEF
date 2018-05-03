@@ -108,16 +108,22 @@ def bygging():
     cursor.execute("""
         INSERT INTO bygging(ID, nafn, address)
         VALUES
-            (1, "Tækniskólinn Skólavörðuholti", "Skólavörðuholt 101 Reykjavík"),
+            (1, "Tækniskólinn Skólavörðuholti - aðalbygging", "Skólavörðuholt 101 Reykjavík"),
             (2, "Tækniskólinn Hafnarfirði", "Flatahraun 12-14 220 Hafnarfirði"),
-            (3, "Tækniskólinn - Sjómannaskólinn", "Háteigsvegur 35-39 105 Reykjavík")
+            (3, "Tækniskólinn - Sjómannaskólinn", "Háteigsvegur 35-39 105 Reykjavík"),
+            (4, "Tækniskólinn Skólavörðuholti - Vörðuskóli", "Skólavörðuholt 101 Reykjavík")
     """)
 
 
 def stofur(key_listi):
     for x in key_listi:
         if search("S(?=\s[0-9]+)", x[1]):
-            bID = 1
+            if search("S(?=\s6)", x[1]):
+                bID = 4
+                print(x[1])
+            else:
+                bID = 1
+                print(x[1],"asd")
         elif search("H(?=\s[0-9]+)", x[1]):
             bID = 3
         elif search("TH-(?=[0-9]+)", x[1]):

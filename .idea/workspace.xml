@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31e1f468-cd6a-464a-a91f-1d135cec532a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/LokaverkefniVEF.iml" afterPath="$PROJECT_DIR$/.idea/LokaverkefniVEF.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/stofur.db" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MVC/controller.py" afterPath="$PROJECT_DIR$/MVC/controller.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MVC/database.py" afterPath="$PROJECT_DIR$/MVC/database.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MVC/model.py" afterPath="$PROJECT_DIR$/MVC/model.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MVC/stofur.db" afterPath="$PROJECT_DIR$/MVC/stofur.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MVC/templates/lausarstofur.tpl" afterPath="$PROJECT_DIR$/MVC/templates/lausarstofur.tpl" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="model.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="model.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MVC/model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="554">
-              <caret line="63" column="8" lean-forward="false" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="8" />
+            <state relative-caret-position="323">
+              <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
               <folding>
                 <element signature="e#51#65#0" expanded="true" />
               </folding>
@@ -30,12 +30,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="controller.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="controller.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MVC/controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="36" column="118" lean-forward="false" selection-start-line="36" selection-start-column="118" selection-end-line="36" selection-end-column="118" />
-              <folding />
+            <state relative-caret-position="136">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding>
+                <element signature="e#54#73#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -43,11 +45,10 @@
       <file leaf-file-name="database.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MVC/database.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1326">
-              <caret line="79" column="8" lean-forward="false" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="8" />
+            <state relative-caret-position="340">
+              <caret line="125" column="31" lean-forward="false" selection-start-line="125" selection-start-column="31" selection-end-line="125" selection-end-column="31" />
               <folding>
                 <element signature="e#116#130#0" expanded="true" />
-                <marker date="1525375307725" expanded="true" signature="4161:4175" ph="..." />
               </folding>
             </state>
           </provider>
@@ -119,10 +120,10 @@
         <option value="$PROJECT_DIR$/MVC/database2.py" />
         <option value="$PROJECT_DIR$/../Leikjaforritun/Skil03/Skil03.py" />
         <option value="H:/2017H/FOR/Skil04/Skil04.py" />
-        <option value="$PROJECT_DIR$/MVC/database.py" />
         <option value="$PROJECT_DIR$/applications.py" />
-        <option value="$PROJECT_DIR$/MVC/model.py" />
         <option value="$PROJECT_DIR$/MVC/controller.py" />
+        <option value="$PROJECT_DIR$/MVC/database.py" />
+        <option value="$PROJECT_DIR$/MVC/model.py" />
       </list>
     </option>
   </component>
@@ -279,8 +280,8 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.applications" />
-        <item index="1" class="java.lang.String" itemvalue="Python.model (1)" />
-        <item index="2" class="java.lang.String" itemvalue="Python.database (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.database (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.model (1)" />
         <item index="3" class="java.lang.String" itemvalue="Python.controller" />
         <item index="4" class="java.lang.String" itemvalue="Python.Skil04" />
       </list>
@@ -309,7 +310,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11927083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3435843" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37433723" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -363,7 +364,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#54#73#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -373,7 +376,6 @@
           <caret line="141" column="14" lean-forward="true" selection-start-line="141" selection-start-column="14" selection-end-line="141" selection-end-column="14" />
           <folding>
             <element signature="e#116#130#0" expanded="true" />
-            <marker date="1525375307725" expanded="true" signature="4161:4175" ph="..." />
           </folding>
         </state>
       </provider>
@@ -469,17 +471,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/stofur.db" />
     <entry file="file://H:/2017H/VEF/Verkefni7/index.py" />
-    <entry file="file://$PROJECT_DIR$/MVC/database.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="79" column="8" lean-forward="false" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="8" />
-          <folding>
-            <element signature="e#116#130#0" expanded="true" />
-            <marker date="1525375307725" expanded="true" signature="4161:4175" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/applications.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -488,21 +479,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MVC/model.py">
+    <entry file="file://$PROJECT_DIR$/MVC/database.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="63" column="8" lean-forward="false" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="8" />
+        <state relative-caret-position="340">
+          <caret line="125" column="31" lean-forward="false" selection-start-line="125" selection-start-column="31" selection-end-line="125" selection-end-column="31" />
           <folding>
-            <element signature="e#51#65#0" expanded="true" />
+            <element signature="e#116#130#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MVC/controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="36" column="118" lean-forward="false" selection-start-line="36" selection-start-column="118" selection-end-line="36" selection-end-column="118" />
-          <folding />
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#54#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVC/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+          <folding>
+            <element signature="e#51#65#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
