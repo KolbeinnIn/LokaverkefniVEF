@@ -7,9 +7,11 @@
             <h3 class="ui header">Sér valinn tími</h3>
             <form action="val">
                 <div class="ui blue inverted segment">
-                    <input style="position: relative; left:16px; margin:5px;" id="select_time" type="time" name="timi" value="12:00" min="08:10" max="19:30" required>
+                    <small>Ef ýtt er á X þá er núverandi tími valinn</small>
+                    <input style="position: relative; left:16px; margin:5px;" id="select_time" type="time" name="timi" value="12:00" min="08:10" max="19:30">
                     <span style="position: relative; left:16px;" class="validity"></span>
                     <select  style="margin:5px;" name="dagur" required>
+                        <option value=0>Dagur</option>
                         <option value=1>mánudagur</option>
                         <option value=2>þriðjudagur</option>
                         <option value=2>miðvikudagur</option>
@@ -36,7 +38,7 @@
             {% for x in timi: %}
             <div class="ui segment">
                 <h3>{{x[0]}}</h3>
-                <h4>{{x[2][0]}}:{{x[2][1]}}-{{x[2][2]}}:{{x[2][3]}}</h4>
+                <h4>{{dagar[x[3]-1]}}  {{x[2][0]}}:{{x[2][1]}}-{{x[2][2]}}:{{x[2][3]}}</h4>
                 {% if x[-1] == 1: %}
                     <h4 style="margin:0;">{{byggingar[0][1]}}</h4>
                     <h4 style="margin:0;">{{byggingar[0][2]}}</h4>
@@ -57,13 +59,12 @@
         
         {% else: %}
             <div class="ui segment">
-                <h2>Allar stofur eru lausar.</h2>
-                <p>Það er pása</p>
+                <h2>Ekkert fannst</h2>
             </div>
         {% endif %}
     </div>
     {% if flag == True: %}
-    <a href="/"><button>Til baka</button></a>
+    <a href="/"><button style="margin-top: 13px;">Til baka</button></a>
     {% endif %}
 </div>
         
