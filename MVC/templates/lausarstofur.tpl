@@ -14,10 +14,10 @@
                         <option value=0>Dagur</option>
                         <option value=1>mánudagur</option>
                         <option value=2>þriðjudagur</option>
-                        <option value=2>miðvikudagur</option>
-                        <option value=3>fimmtudagur</option>
-                        <option value=4>föstudagur</option>
-                        <option value=5>laugardagur</option>
+                        <option value=3>miðvikudagur</option>
+                        <option value=4>fimmtudagur</option>
+                        <option value=5>föstudagur</option>
+                        <option value=6>laugardagur</option>
                     </select>
                     <select  style="margin:5px;" name="bygging" value="0">
                         <option value=0>Bygging</option>
@@ -29,6 +29,9 @@
                 </div>
                 <div>
                     <input type="submit" value="Staðfesta">
+                    {% if flag == True: %}
+                    <a href="/"><button style="margin-top: 13px;">Til baka</button></a>
+                    {% endif %}
                 </div>
             </form>
         </div>
@@ -63,9 +66,6 @@
             </div>
         {% endif %}
     </div>
-    {% if flag == True: %}
-    <a href="/"><button style="margin-top: 13px;">Til baka</button></a>
-    {% endif %}
 </div>
         
 <script>
