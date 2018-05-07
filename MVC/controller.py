@@ -7,6 +7,7 @@ from MVC import model
 from flask import render_template, redirect, url_for, request
 
 
+
 byggingar = model.byggingar
 
 path = "main.tpl"
