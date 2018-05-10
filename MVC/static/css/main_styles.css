@@ -28,3 +28,20 @@ input:valid+span:after {
 .b{
     background-color:darksalmon !important;
 }
+@media only screen and (min-width:992px) and (max-width:1199px){
+    .desktop-only{
+        display:block !important;
+    }
+    .asdf{
+        display:none !important;
+    }
+}
+
+@media only screen and (min-width:1200px){
+    .desktop-only{
+        display:none !important;
+    }
+    .asdf{
+        display:block !important;
+    }
+}
