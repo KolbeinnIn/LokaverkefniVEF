@@ -41,6 +41,9 @@ input:valid+span:after {
     .desktop-only{
         display: none !important;
     }
+    .x{
+        display: none;
+    }
 }
 
 @media only screen and (min-width:992px) and (max-width:1199px){

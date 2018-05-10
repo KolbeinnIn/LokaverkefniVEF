@@ -81,7 +81,7 @@
                     <h3 class="ui header">Sér valinn tími</h3>
                     <form action="val">
                         <div class="b ui segment">
-                            <small>Ef ýtt er á X þá er núverandi tími valinn</small>
+                            <small>Ef enginn tími er valinn þá er núverandi tími notaður</small>
                             <br>
                             <input style="position: relative; left:16px; margin:5px;" id="select_time" type="time" name="timi" min="08:10" max="19:30">
                             <span style="position: relative; left:16px;" class="validity"></span>
