@@ -6,27 +6,6 @@ body{
     margin: 0 auto;
     text-align: center;
 }
-.border{
-    border: 1px 1px black solid;
-}
-.fl-left{
-    float:left;
-}
-
-.col-1-3{
-    width:33.33333333333333%;
-}
-
-.col-2-3{
-    width:66.666666666%;
-}
-.c{
-    background-color: red;
-}
-.d{
-    background-color: black;
-}
-
 input[type="number"] {
   width: 100px;
 }
