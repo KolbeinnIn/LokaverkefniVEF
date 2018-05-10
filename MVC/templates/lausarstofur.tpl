@@ -4,8 +4,8 @@
     </div>
     <div class="b ui segment" id="val">
         <div class="ui four column grid">    
-            <div class="desktop-only computer only sixteen wide column">
-                <div class="right ui rail" style="left:770px !important">
+            <div class="desktop-only computer only large screen only sixteen wide column">
+                <div class="right ui rail breidd" style="left:770px !important">
                     <div class="ui sticky segment">
                         <h3 class="ui header">Sér valinn tími</h3>
                         <form action="val">
@@ -76,14 +76,14 @@
                     </div>
                 </div>
             </div>
-            <div class="tablet only mobile only sixteen wide column">
+            <div class="sma sixteen wide column">
                 <div class="ui segment" style="margin-bottom: 15px;">
                     <h3 class="ui header">Sér valinn tími</h3>
                     <form action="val">
                         <div class="b ui segment">
                             <small>Ef ýtt er á X þá er núverandi tími valinn</small>
                             <br>
-                            <input style="position: relative; left:16px; margin:5px;" id="select_time" type="time" name="timi" value="12:00" min="08:10" max="19:30">
+                            <input style="position: relative; left:16px; margin:5px;" id="select_time" type="time" name="timi" min="08:10" max="19:30">
                             <span style="position: relative; left:16px;" class="validity"></span>
                             <br>
                             <select  style="margin:5px;" name="dagur" required>
