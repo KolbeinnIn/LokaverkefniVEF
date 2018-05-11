@@ -5,7 +5,7 @@
     <div class="b ui segment" id="val">
         <div class="ui four column grid">    
             <div class="desktop-only computer only large screen only sixteen wide column">
-                <div class="right ui rail breidd" style="left:770px !important">
+                <div class="right ui rail" style="left:770px !important">
                     <div class="ui sticky segment">
                         <h3 class="ui header">Sér valinn tími</h3>
                         <form action="val">
@@ -153,3 +153,6 @@
         });
     </script>
 </div>
+<footer class="footer">
+    <p style="margin-top:4px;">© 2018 Kolbeinn Ingólfsson</p>
+</footer>

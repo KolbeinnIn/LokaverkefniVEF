@@ -34,15 +34,23 @@ input:valid+span:after {
     background-color:darksalmon !important;
 }
 
+.footer{
+    width:100%;
+    height:30px;
+    position:fixed;
+    left:0;
+    bottom:0;
+    background-color:darksalmon;
+    color:white;
+    text-shadow: 1px 1px black;
+}
+
 @media only screen and (max-width:1199px){
     .sma{
         display:block !important;
     }
     .desktop-only{
         display: none !important;
-    }
-    .x{
-        display: none;
     }
 }
 
@@ -64,10 +72,5 @@ input:valid+span:after {
     }
     .sma{
         display:none !important;
-    }
-}
-@media only screen and (min-width:1200px) and (max-width:1400px){
-    .breidd{
-        width: 150px !important;
     }
 }
