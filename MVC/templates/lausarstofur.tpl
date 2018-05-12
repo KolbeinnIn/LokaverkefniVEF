@@ -116,28 +116,45 @@
         </div>
         
         <div>
-            {% if len != 0: %}
-                {% for x in timi: %}
-                <div class="ui segment">
-                    <h3>{{x[0]}}</h3>
-                    <h4>{{dagar[x[3]-1]}}  {{x[2][0]}}:{{x[2][1]}}-{{x[2][2]}}:{{x[2][3]}}</h4>
-                    {% if x[-1] == 1: %}
-                        <h4 style="margin:0;">{{byggingar[0][1]}}</h4>
-                        <h4 style="margin:0;">{{byggingar[0][2]}}</h4>
-                    {% elif x[-1] == 2: %}
-                        <h4 style="margin:0;">{{byggingar[1][1]}}</h4>
-                        <h4 style="margin:0;">{{byggingar[1][2]}}</h4>
-                    {% elif x[-1] == 3: %}
-                        <h4 style="margin:0;">{{byggingar[2][1]}}</h4>
-                        <h4 style="margin:0;">{{byggingar[2][2]}}</h4>
-                    {% elif x[-1] == 4: %}
-                        <h4 style="margin:0;">{{byggingar[3][1]}}</h4>
-                        <h4 style="margin:0;">{{byggingar[3][2]}}</h4>
-                    {% else: %}
-                        <h4>Bygging óvituð</h4>
-                    {% endif %}
-                </div>
-                {% endfor %}
+            <div class="ui segment">
+                <h2>Klukkan er: &nbsp;{{klst}}:{{minu}}</h2>
+            </div>
+            {% if lengd != 0: %}
+                {% if timi[0][0] == "Pása":%}
+                    <div class="ui segment">
+                        <h3>Allar stofur eru lausar frá</h3>
+                        {% for x in range(len): %}
+                            <h4>kl {{timi[x][2][0]}}:{{timi[x][2][1]}} - {{timi[x][2][2]}}:{{timi[x][2][3]}}</h4>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {% for x in timi:%}
+                    <div class="ui segment">
+                        <h3>{{x[0]}}</h3>
+                        {% if x[3] == 7: %}
+                            <h4>{{x[2][0]}}:{{x[2][1]}}-{{x[2][2]}}:{{x[2][3]}}</h4>
+                        {% else: %}
+                            <h4>{{dagar[x[3]-1]}}  {{x[2][0]}}:{{x[2][1]}}-{{x[2][2]}}:{{x[2][3]}}</h4>
+                        {% endif %}
+
+                        {% if x[-1] == 1: %}
+                            <h4 style="margin:0;">{{byggingar[0][1]}}</h4>
+                            <h4 style="margin:0;">{{byggingar[0][2]}}</h4>
+                        {% elif x[-1] == 2: %}
+                            <h4 style="margin:0;">{{byggingar[1][1]}}</h4>
+                            <h4 style="margin:0;">{{byggingar[1][2]}}</h4>
+                        {% elif x[-1] == 3: %}
+                            <h4 style="margin:0;">{{byggingar[2][1]}}</h4>
+                            <h4 style="margin:0;">{{byggingar[2][2]}}</h4>
+                        {% elif x[-1] == 4: %}
+                            <h4 style="margin:0;">{{byggingar[3][1]}}</h4>
+                            <h4 style="margin:0;">{{byggingar[3][2]}}</h4>
+                        {% else: %}
+                            <h4>Bygging óvituð</h4>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                {% endif %}
 
             {% else: %}
                 <div class="ui segment">
@@ -153,6 +170,10 @@
         });
     </script>
 </div>
-<footer class="footer">
-    <p style="margin-top:4px;">© 2018 Kolbeinn Ingólfsson</p>
+<footer class="footer"> 
+    <p style="margin-top:4px;">© 2018&nbsp;Kolbeinn Ingólfsson&nbsp;&nbsp;&nbsp;
+        <a href="https://github.com/KolbeinnIn/LokaverkefniVEF/wiki" target="_blank">
+            <img style="position:relative;top:4px;" src="../static/github.svg" height="16" width="16"/>
+        </a>
+    </p>
 </footer>
