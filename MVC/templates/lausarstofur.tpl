@@ -11,7 +11,7 @@
                         <form action="val">
                             <div class="b ui segment">
                                 <small>Ef ýtt er á X þá er núverandi tími valinn</small>
-                                <input style="position: relative; left:16px; margin:5px;" id="select_time" type="time" name="timi" value="12:00" min="08:10" max="19:30">
+                                <input style="position: relative; left:16px; margin:5px;" id="select_time" type="time" name="timi" value="12:00" min="08:10" max="18:40">
                                 <span style="position: relative; left:16px;" class="validity"></span>
                                 <select  style="margin:5px;" name="dagur" required>
                                     <option value=0>Dagur</option>
@@ -47,7 +47,7 @@
                         <form action="val">
                             <div class="b ui segment">
                                 <small>Ef ýtt er á X þá er núverandi tími valinn</small>
-                                <input style="position: relative; left:16px; margin:5px;" id="select_time" type="time" name="timi" value="12:00" min="08:10" max="19:30">
+                                <input style="position: relative; left:16px; margin:5px;" id="select_time" type="time" name="timi" value="12:00" min="08:10" max="18:40">
                                 <span style="position: relative; left:16px;" class="validity"></span>
                                 <select  style="margin:5px;" name="dagur" required>
                                     <option value=0>Dagur</option>
@@ -83,7 +83,7 @@
                         <div class="b ui segment">
                             <small>Ef enginn tími er valinn þá er núverandi tími notaður</small>
                             <br>
-                            <input style="position: relative; left:16px; margin:5px;" id="select_time" type="time" name="timi" min="08:10" max="19:30">
+                            <input style="position: relative; left:16px; margin:5px;" id="select_time" type="time" name="timi" min="08:10" max="18:40">
                             <span style="position: relative; left:16px;" class="validity"></span>
                             <br>
                             <select  style="margin:5px;" name="dagur" required>
