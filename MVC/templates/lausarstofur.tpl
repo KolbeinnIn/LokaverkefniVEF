@@ -77,6 +77,9 @@
                 </div>
             </div>
             <div class="sma sixteen wide column">
+                <div class="ui segment">
+                    <h2>Klukkan er: &nbsp;{{klst}}:{{minu}}</h2>
+                </div>
                 <div class="ui segment" style="margin-bottom: 15px;">
                     <h3 class="ui header">Sér valinn tími</h3>
                     <form action="val">
@@ -170,10 +173,10 @@
         });
     </script>
 </div>
-<footer class="footer"> 
+<footer> 
     <p style="margin-top:4px;">© 2018&nbsp;Kolbeinn Ingólfsson&nbsp;&nbsp;&nbsp;
         <a href="https://github.com/KolbeinnIn/LokaverkefniVEF/wiki" target="_blank">
-            <img style="position:relative;top:4px;" src="../static/github.svg" height="16" width="16"/>
+            <img style="position:relative;top:4px;" src="../static/github.svg" height="16" width="16">
         </a>
     </p>
 </footer>
