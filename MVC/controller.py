@@ -22,9 +22,9 @@ def index():
     klst, minu, dagur = ctimi[3], ctimi[4], ctimi[6]
     current_timi = laust.selected_time(klst, minu, dagur+1, 0)
     if klst < 10:
-        klst = "0"+str(ctimi[3])
+        klst = "0"+str(klst)
     if minu < 10:
-        klst = "0" + str(ctimi[4])
+        minu = "0" + str(minu)
     return render_template(path, file=file, timi=current_timi, len=len(current_timi),
                            byggingar=byggingar, flag=False, dagar=model.dagar, klst=klst, minu=minu)
 
@@ -68,9 +68,9 @@ def val():
     ctimi = model.get_time()
     klst, minu, dagur = ctimi[3], ctimi[4], ctimi[6]
     if klst < 10:
-        klst = "0"+str(ctimi[3])
+        klst = "0"+str(klst)
     if minu < 10:
-        klst = "0" + str(ctimi[4])
+        minu = "0" + str(minu)
 
     return render_template(path, file=file, timi=selected_timi, len=len(selected_timi), byggingar=byggingar,
                            flag=True, dagar=model.dagar, klst=klst, minu=minu)
