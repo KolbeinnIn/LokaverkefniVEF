@@ -77,9 +77,6 @@
                 </div>
             </div>
             <div class="sma sixteen wide column">
-                <div class="ui segment">
-                    <h2>Klukkan er: &nbsp;{{klst}}:{{minu}}</h2>
-                </div>
                 <div class="ui segment" style="margin-bottom: 15px;">
                     <h3 class="ui header">Sér valinn tími</h3>
                     <form action="val">
