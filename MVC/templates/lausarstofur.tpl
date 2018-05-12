@@ -117,7 +117,7 @@
         
         <div>
             <div class="ui segment">
-                <h2>Klukkan asder: &nbsp;{{klst}}:{{minu}}</h2>
+                <h2>Klukkan er: &nbsp;{{klst}}:{{minu}}</h2>
             </div>
             {% if lengd != 0: %}
                 {% if timi[0][0] == "Pása":%}
