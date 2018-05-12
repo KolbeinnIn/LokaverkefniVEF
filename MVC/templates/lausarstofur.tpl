@@ -122,7 +122,7 @@
             {% if lengd != 0: %}
                 {% if timi[0][0] == "Pása":%}
                     <div class="ui segment">
-                        <h3>Allar stofur eru lausar frá</h3>
+                        <h3>Það er pása frá kennslu á eftirfarandi tímum</h3>
                         {% for x in range(len): %}
                             <h4>kl {{timi[x][2][0]}}:{{timi[x][2][1]}} - {{timi[x][2][2]}}:{{timi[x][2][3]}}</h4>
                         {% endfor %}
