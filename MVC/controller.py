@@ -60,7 +60,7 @@ def val():
             bygg = int(x)
             break
 
-    if day > 6:
+    if day > 7:
         return redirect(url_for("index"))
     if bygg > 4:
         return redirect(url_for("index"))

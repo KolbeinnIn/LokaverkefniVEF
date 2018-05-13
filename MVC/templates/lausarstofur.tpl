@@ -127,6 +127,11 @@
                             <h4>kl {{timi[x][2][0]}}:{{timi[x][2][1]}} - {{timi[x][2][2]}}:{{timi[x][2][3]}}</h4>
                         {% endfor %}
                     </div>
+                {% elif timi[0][0] == "sunnudagur":%}
+                    <div class="ui segment">
+                        <h3>Það eru engir tímar á sunnudögum</h3>
+                        <h4>Skólinn opnar á mánudaginn kl 8:10</h4>
+                    </div>
                 {% else %}
                     {% for x in timi:%}
                     <div class="ui segment">

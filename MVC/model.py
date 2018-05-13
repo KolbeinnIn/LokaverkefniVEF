@@ -53,17 +53,20 @@ class Laust:
             flag = False
             flag2 = True
             fra, til = x[2].split(":"), x[3].split(":")
-            if (klst == 9 and 10 < minu < 15) or \
-               (klst == 9 and 10 < minu < 15) or \
-               (klst == 10 and 15 < minu < 35) or \
-               (klst == 11 and 35 < minu < 40) or \
-               ((klst == 12 and 40 < minu) or (klst == 13 and minu < 10)) or \
-               (klst == 14 and 10 < minu < 15) or \
-               (klst == 15 and 15 < minu < 30) or \
-               (klst == 16 and 30 < minu < 35) or \
-               (klst == 17 and 35 < minu < 40):
-                flag2 = False
-                return self.pasa
+            if day != 7:
+                if (klst == 9 and 10 < minu < 15) or \
+                   (klst == 9 and 10 < minu < 15) or \
+                   (klst == 10 and 15 < minu < 35) or \
+                   (klst == 11 and 35 < minu < 40) or \
+                   ((klst == 12 and 40 < minu) or (klst == 13 and minu < 10)) or \
+                   (klst == 14 and 10 < minu < 15) or \
+                   (klst == 15 and 15 < minu < 30) or \
+                   (klst == 16 and 30 < minu < 35) or \
+                   (klst == 17 and 35 < minu < 40):
+                    flag2 = False
+                    return self.pasa
+            else:
+                return [["sunnudagur", 1, [17, 35, 17, 40], 7, 0]]
 
             if flag2:
                 timi = [x[0], x[1], [int(fra[0]), int(fra[1]), int(til[0]), int(til[1])], x[4], x[5]]
