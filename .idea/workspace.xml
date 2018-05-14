@@ -2,9 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31e1f468-cd6a-464a-a91f-1d135cec532a" name="Default" comment="">
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/LokaverkefniVEF.iml" afterPath="$PROJECT_DIR$/.idea/LokaverkefniVEF.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+=======
+<<<<<<< HEAD
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/MVC/controller.py" afterPath="$PROJECT_DIR$/MVC/controller.py" />
+      <change beforePath="$PROJECT_DIR$/MVC/static/css/main_styles.css" afterPath="$PROJECT_DIR$/MVC/static/css/main_styles.css" />
+      <change beforePath="$PROJECT_DIR$/MVC/static/semantic/semantic.min.css" afterPath="$PROJECT_DIR$/MVC/static/semantic/semantic.min.css" />
+      <change beforePath="$PROJECT_DIR$/MVC/templates/asd.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MVC/templates/jquery-3.3.1.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MVC/templates/lausarstofur.tpl" afterPath="$PROJECT_DIR$/MVC/templates/lausarstofur.tpl" />
+      <change beforePath="$PROJECT_DIR$/MVC/templates/semantic.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MVC/templates/semantic.min.js" afterPath="" />
+>>>>>>> 6b5b157d39f5c9787ef54fa3bb781c25934e5c72
+>>>>>>> 5a6a186e13e14b3b01fa66dcd9b440c67ae3852c
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,9 +35,22 @@
       <file leaf-file-name="model.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MVC/model.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="0">
               <caret line="50" column="22" lean-forward="false" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
+=======
+<<<<<<< HEAD
+            <state relative-caret-position="714">
+              <caret line="43" column="88" lean-forward="false" selection-start-line="43" selection-start-column="88" selection-end-line="43" selection-end-column="88" />
+              <folding>
+                <element signature="e#51#65#0" expanded="true" />
+              </folding>
+=======
+            <state relative-caret-position="289">
+              <caret line="50" column="35" lean-forward="true" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
+>>>>>>> 5a6a186e13e14b3b01fa66dcd9b440c67ae3852c
               <folding />
+>>>>>>> 6b5b157d39f5c9787ef54fa3bb781c25934e5c72
             </state>
           </provider>
         </entry>
@@ -28,8 +58,18 @@
       <file leaf-file-name="controller.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MVC/controller.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="357">
               <caret line="21" column="52" lean-forward="false" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+=======
+<<<<<<< HEAD
+            <state relative-caret-position="334">
+              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+=======
+            <state relative-caret-position="306">
+              <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="33" />
+>>>>>>> 6b5b157d39f5c9787ef54fa3bb781c25934e5c72
+>>>>>>> 5a6a186e13e14b3b01fa66dcd9b440c67ae3852c
               <folding>
                 <element signature="e#54#73#0" expanded="true" />
               </folding>
@@ -40,8 +80,13 @@
       <file leaf-file-name="database.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MVC/database.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="2040">
+              <caret line="121" column="23" lean-forward="false" selection-start-line="121" selection-start-column="23" selection-end-line="121" selection-end-column="23" />
+=======
             <state relative-caret-position="2108">
               <caret line="125" column="19" lean-forward="false" selection-start-line="125" selection-start-column="19" selection-end-line="125" selection-end-column="19" />
+>>>>>>> 6b5b157d39f5c9787ef54fa3bb781c25934e5c72
               <folding>
                 <element signature="e#116#130#0" expanded="true" />
               </folding>
@@ -52,8 +97,18 @@
       <file leaf-file-name="applications.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/applications.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="119">
               <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+=======
+<<<<<<< HEAD
+            <state relative-caret-position="119">
+              <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+=======
+            <state relative-caret-position="136">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+>>>>>>> 6b5b157d39f5c9787ef54fa3bb781c25934e5c72
+>>>>>>> 5a6a186e13e14b3b01fa66dcd9b440c67ae3852c
               <folding />
             </state>
           </provider>
@@ -164,8 +219,17 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+<<<<<<< HEAD
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Leikjaforritun/Skil05" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+<<<<<<< HEAD
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+=======
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+>>>>>>> 6b5b157d39f5c9787ef54fa3bb781c25934e5c72
+>>>>>>> 5a6a186e13e14b3b01fa66dcd9b440c67ae3852c
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -301,7 +365,17 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <layout>
+<<<<<<< HEAD
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18337408" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+=======
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.104166664" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+<<<<<<< HEAD
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37433723" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+=======
+>>>>>>> 6b5b157d39f5c9787ef54fa3bb781c25934e5c72
+>>>>>>> 5a6a186e13e14b3b01fa66dcd9b440c67ae3852c
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37173912" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -464,8 +538,13 @@
     <entry file="file://H:/2017H/VEF/Verkefni7/index.py" />
     <entry file="file://$PROJECT_DIR$/MVC/database.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="2040">
+          <caret line="121" column="23" lean-forward="false" selection-start-line="121" selection-start-column="23" selection-end-line="121" selection-end-column="23" />
+=======
         <state relative-caret-position="2108">
           <caret line="125" column="19" lean-forward="false" selection-start-line="125" selection-start-column="19" selection-end-line="125" selection-end-column="19" />
+>>>>>>> 6b5b157d39f5c9787ef54fa3bb781c25934e5c72
           <folding>
             <element signature="e#116#130#0" expanded="true" />
           </folding>
@@ -482,26 +561,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MVC/templates/lausarstofur.tpl">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+<<<<<<< HEAD
+        <state relative-caret-position="714">
+          <caret line="43" column="88" lean-forward="false" selection-start-line="43" selection-start-column="88" selection-end-line="43" selection-end-column="88" />
+          <folding>
+            <element signature="e#51#65#0" expanded="true" />
+          </folding>
+=======
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+>>>>>>> 5a6a186e13e14b3b01fa66dcd9b440c67ae3852c
           <folding />
+>>>>>>> 6b5b157d39f5c9787ef54fa3bb781c25934e5c72
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MVC/controller.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="357">
           <caret line="21" column="52" lean-forward="false" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+=======
+<<<<<<< HEAD
+        <state relative-caret-position="334">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+=======
+        <state relative-caret-position="306">
+          <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="33" />
+>>>>>>> 6b5b157d39f5c9787ef54fa3bb781c25934e5c72
+>>>>>>> 5a6a186e13e14b3b01fa66dcd9b440c67ae3852c
           <folding>
             <element signature="e#54#73#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/applications.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+=======
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/applications.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+=======
+    <entry file="file://$PROJECT_DIR$/MVC/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="50" column="35" lean-forward="true" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
+>>>>>>> 6b5b157d39f5c9787ef54fa3bb781c25934e5c72
+>>>>>>> 5a6a186e13e14b3b01fa66dcd9b440c67ae3852c
           <folding />
         </state>
       </provider>

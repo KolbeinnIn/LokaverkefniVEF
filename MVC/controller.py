@@ -21,7 +21,12 @@ def index():
     ctimi = model.get_time()
     klst, minu, dagur = ctimi[3], ctimi[4], ctimi[6]
     current_timi = laust.selected_time(klst, minu, dagur+1, 0)
-    return render_template(path, file=file, timi=current_timi, len=len(current_timi), byggingar=byggingar, flag=False, dagar=model.dagar)
+    if klst < 10:
+        klst = "0"+str(klst)
+    if minu < 10:
+        minu = "0" + str(minu)
+    return render_template(path, file=file, timi=current_timi, len=len(current_timi),
+                           byggingar=byggingar, flag=False, dagar=model.dagar, klst=klst, minu=minu)
 
 
 @app.route('/val', methods=['GET', 'POST'])
@@ -55,9 +60,17 @@ def val():
             bygg = int(x)
             break
 
-    if day > 6:
+    if day > 7:
         return redirect(url_for("index"))
     if bygg > 4:
         return redirect(url_for("index"))
     selected_timi = laust.selected_time(sel[0], sel[1], day, bygg)
-    return render_template(path, file=file, timi=selected_timi, len=len(selected_timi), byggingar=byggingar, flag=True, dagar=model.dagar)
+    ctimi = model.get_time()
+    klst, minu, dagur = ctimi[3], ctimi[4], ctimi[6]
+    if klst < 10:
+        klst = "0"+str(klst)
+    if minu < 10:
+        minu = "0" + str(minu)
+
+    return render_template(path, file=file, timi=selected_timi, len=len(selected_timi), byggingar=byggingar,
+                           flag=True, dagar=model.dagar, klst=klst, minu=minu)
