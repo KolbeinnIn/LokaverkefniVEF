@@ -70,8 +70,5 @@ def val():
         klst = "0"+str(klst)
     if minu < 10:
         minu = "0" + str(minu)
-
-    print(timi, day, bygg)
-    print(selected_timi)
     return render_template(path, file=file, timi=selected_timi, len=len(selected_timi), byggingar=byggingar,
                            flag=True, dagar=model.dagar, klst=klst, minu=minu)
