@@ -46,9 +46,10 @@ class Laust:
         ]
 
     def selected_time(self, klst, minu, day, bygging):
-        if ((klst == 18 and minu > 40) or (klst > 19)) or \
+        if ((klst == 18 and minu > 40) or (klst >= 19)) or \
                 ((klst < 8 and minu < 10) or klst < 8):
             return [["Degi lokið", 1, [18, 40, 8, 10], 7, 0]]
+
         for x in self.query:
             flag = False
             flag2 = True

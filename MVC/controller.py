@@ -24,6 +24,7 @@ def index():
         klst = "0"+str(klst)
     if minu < 10:
         minu = "0" + str(minu)
+    print(current_timi)
     return render_template(path, file=file, timi=current_timi, len=len(current_timi),
                            byggingar=byggingar, flag=False, dagar=model.dagar, klst=klst, minu=minu)
 
