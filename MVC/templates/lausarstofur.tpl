@@ -119,8 +119,8 @@
             <div class="ui segment">
                 <h2>Klukkan er: &nbsp;{{klst}}:{{minu}}</h2>
             </div>
-            {% if lengd != 0: %}
-                {% if timi[0][0] == "Pása":%}
+            {% if len != 0: %}
+                {% if timi[0][0] == "Pása": %}
                     <div class="ui segment">
                         <h3>Það er pása frá kennslu á eftirfarandi tímum</h3>
                         {% for x in range(len): %}
