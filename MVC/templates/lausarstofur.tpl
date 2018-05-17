@@ -3,43 +3,7 @@
         <h1 style="color:white; text-shadow: 1px 1px black;">Lausar stofur</h1>
     </div>
     <div class="b ui segment" id="val">
-        <div class="ui four column grid">    
-            <div class="desktop-only computer only large screen only sixteen wide column">
-                <div class="right ui rail" style="left:770px !important">
-                    <div class="ui sticky segment">
-                        <h3 class="ui header">Sér valinn tími</h3>
-                        <form action="val">
-                            <div class="b ui segment">
-                                <small>Ef ýtt er á X þá er núverandi tími valinn</small>
-                                <input style="position: relative; left:16px; margin:5px;" id="select_time" type="time" name="timi" value="12:00" min="08:10" max="18:40">
-                                <span style="position: relative; left:16px;" class="validity"></span>
-                                <select  style="margin:5px;" name="dagur" required>
-                                    <option value=0>Dagur</option>
-                                    <option value=1>mánudagur</option>
-                                    <option value=2>þriðjudagur</option>
-                                    <option value=3>miðvikudagur</option>
-                                    <option value=4>fimmtudagur</option>
-                                    <option value=5>föstudagur</option>
-                                    <option value=6>laugardagur</option>
-                                </select>
-                                <select  style="margin:5px;" name="bygging" value="0">
-                                    <option value=0>Bygging</option>
-                                    <option value=1>Skólavörðuholt - aðal</option>
-                                    <option value=2>Tækniskólinn Hafnarfirði</option>
-                                    <option value=3>Sjómannaskólinn</option>
-                                    <option value=4>Vörðuskóli</option>
-                                </select>
-                            </div>
-                            <div>
-                                <input type="submit" value="Staðfesta">
-                            </div>
-                        </form>
-                        {% if flag == True: %}
-                        <a href="/"><button style="margin-top: 13px;">Til baka</button></a>
-                        {% endif %}
-                    </div>
-                </div>
-            </div>
+        <div class="ui column grid">
             <div class="asdf large screen only sixteen wide column">
                 <div class="right ui rail" style="left:770px !important">
                     <div class="ui sticky segment">
@@ -67,11 +31,13 @@
                                 </select>
                             </div>
                             <div>
-                                <input type="submit" value="Staðfesta">
+                                <input class="ui button" type="submit" value="Staðfesta">
                             </div>
                         </form>
                         {% if flag == True: %}
-                        <a href="/"><button style="margin-top: 13px;">Til baka</button></a>
+                        <a href="/">
+                            <button class="ui button" style="margin-top: 7px;">123Til baka</button>
+                        </a>
                         {% endif %}
                     </div>
                 </div>
@@ -105,11 +71,12 @@
                             </select>
                         </div>
                         <div>
-                            <input type="submit" value="Staðfesta">
+                            <input class="ui button" type="submit" value="Staðfesta">
                         </div>
                     </form>
                     {% if flag == True: %}
-                    <a href="/"><button style="margin-top: 13px;">Til baka</button></a>
+                    <a href="/">
+                        <button class="ui button" style="margin-top: 7px;">Til baka</button></a>
                     {% endif %}
                 </div>
             </div>
